@@ -124,6 +124,7 @@ const start = app => {
   /* wishlist */
   app.post('/wishlist', async (req, res) => {
     const body = req.body;
+    console.log(body);
     const wishlist = { id: null, user: body.user, product: body.product }
     const result = await Queries.WishlistQueries.add(wishlist);
     return res.send(result);
