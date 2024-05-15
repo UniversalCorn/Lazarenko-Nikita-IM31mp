@@ -136,8 +136,8 @@ main {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 24, 22, 0.9);
-  transform: scale(0);
+  background-color: rgba(15, 0, 24, 0.9);
+  transform: translateX(-100%);
   transition: 0.3s;
 }
 
@@ -146,7 +146,7 @@ main {
 }
 
 .item:hover > p {
-  transform: scale(1);
+  transform: translateX(0);
 }
 
 .item-desc {
